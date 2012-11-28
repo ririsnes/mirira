@@ -1,0 +1,70 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+ 
+<head> 
+	<title>Quis Dasar-Dasar HTML & Lanjutan</title>
+	<script type="text/javascript">
+function hasil(){
+	var benar = 0;
+	if (document.test.item_1[1].checked==true){benar = benar + 20;};
+	if (document.test.item_2[3].checked==true){benar = benar + 20;};
+	if (document.test.item_3[4].checked==true){benar = benar + 20;};
+	if (document.test.item_4[1].checked==true){benar = benar + 20;};
+	if (document.test.item_5[4].checked==true){benar = benar + 20;};
+	alert("Skor Anda = " + benar);	
+	
+}
+</script>
+</head>
+<body> 
+<form name="test" action="#">
+<p>
+Pilihlah salah satu jawaban yang menurut anda paling tepat !
+</p>
+</br>
+  
+<p>
+<ol>
+	<li>HTML adalah...</li></br>
+		<input type="radio" name="item_1"/>Sebuah bahasa pemrograman<br />
+		<input type="radio" name="item_1"/>Sebuah bahasa markup<br />
+		<input type="radio" name="item_1"/>Sebuah bahasa inggris<br />
+		<input type="radio" name="item_1"/>Sebuah bahasa jin<br />
+		<input type="radio" name="item_1"/>Sebuah bahasa alay<br /></br></br>
+		
+	<li>Struktur dari HTML adalah...</li></br>
+		<input type="radio" name="item_2"/>Tag head, style dan body<br />
+		<input type="radio" name="item_2"/>Tag header, title dan style<br />
+		<input type="radio" name="item_2"/>Tag head, body dan html<br />
+		<input type="radio" name="item_2"/>Tag head, title dan body<br />
+		<input type="radio" name="item_2"/>Tag header, title dan body<br /></br></br>
+		
+	<li>Berikut ini adalah kebutuhan-kebutuhan yang diperlukan untuk membuat HTML dan software untuk menampilkannya , kecuali...</li></br>
+		<input type="radio" name="item_3"/>WampServer<br />
+		<input type="radio" name="item_3"/>Web Browser<br />
+		<input type="radio" name="item_3"/>Editor Teks<br />
+		<input type="radio" name="item_3"/>HTML Validator<br />
+		<input type="radio" name="item_3"/>DOTA<br /></br></br>
+		
+	<li>Tabel pada elemen HTML merupakan...</li></br>
+		<input type="radio" name="item_4"/>elemen untuk mengaitkan satu dokumen dengan dokumen lainnya<br />
+		<input type="radio" name="item_4"/>Untuk menghasilkan data dalam bentuk tabular<br />
+		<input type="radio" name="item_4"/>Untuk membagi halaman web secara independen<br />
+		<input type="radio" name="item_4"/>Untuk menghasilkan form masukkan data<br />
+		<input type="radio" name="item_4"/>Untuk menampilkan gambar ke dalam halaman web<br /></br></br>
+ 
+	<li>Elemen yang ada pada HTML di bawah ini adalah...</li></br>
+		<input type="radio" name="item_5"/>Equip<br />
+		<input type="radio" name="item_5"/>Excel<br />
+		<input type="radio" name="item_5"/>Name<br />
+		<input type="radio" name="item_5"/>Main<br />
+		<input type="radio" name="item_5" />Link<br /></br>
+</ol>
+<input name="Submit" type="submit" value="Lihat Hasil" onclick="hasil()"/>
+
+</form>
+</body> 
+ 
+</html>
